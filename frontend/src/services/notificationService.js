@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/notifications';
+const API_URL = '/api/notifications';
 
 const getHeaders = () => {
   const token = localStorage.getItem('token');

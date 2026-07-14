@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/complaints';
+const API_URL = '/api/complaints';
 
 const getHeaders = () => {
   const token = localStorage.getItem('token');

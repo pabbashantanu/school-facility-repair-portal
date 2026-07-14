@@ -70,7 +70,7 @@ app.use('/api/admin', adminRoutes);
 // Setup Port
 const PORT = process.env.PORT || 5000;
 
-// Start Server after DB connects
+// Start Server after DB connects (only if executed directly, not imported in serverless functions)
 const startServer = async () => {
   try {
     await connectDB();
@@ -82,4 +82,12 @@ const startServer = async () => {
   }
 };
 
-startServer();
+if (require.main === module) {
+  startServer();
+} else {
+  // Call database connection for serverless function environment
+  connectDB();
+}
+
+module.exports = app;
+
