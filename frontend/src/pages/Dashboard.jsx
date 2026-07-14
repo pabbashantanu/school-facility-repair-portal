@@ -60,7 +60,8 @@ const Dashboard = () => {
       setStats(computedStats);
       setLoading(false);
     } catch (err) {
-      setError('Could not load dashboard information.');
+      const msg = err.response?.data?.message || err.message || 'Could not load dashboard information.';
+      setError(msg);
       setLoading(false);
     }
   };
