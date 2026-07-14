@@ -107,19 +107,6 @@ school-facility-repair/
 
 ---
 
-## 📸 Screenshots Section Placeholders
-
-### 1. Landing Page
-*[Insert Landing Page screenshot here: displays modern layout, statistics, and role details]*
-
-### 2. Administrator Analytics Dashboard
-*[Insert Admin Analytics screenshot here: displays Chart.js graphs mapping monthly metrics and facility spreads]*
-
-### 3. Student Submission Portal
-*[Insert Submission screenshot here: displays damage form fields, validation errors, and file upload drop-zone]*
-
----
-
 ## 🔮 Future Enhancements
 * **Real-time WebSockets**: Integrate Socket.io to trigger instant browser notifications for active users without manual polling.
 * **SMS Notifications**: Incorporate Twilio API to text status alerts directly to staff and students.
